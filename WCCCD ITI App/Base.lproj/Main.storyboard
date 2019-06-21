@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CmM-YP-wK7">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WCCCD Home-->
+        <scene sceneID="Evl-Yq-cIi">
+            <objects>
+                <viewController title="WCCCD Home" id="kpr-Kd-u1G" customClass="ViewController" customModule="WCCCD_ITI_App" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6d4-vF-6uj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Welcome To Wayne County Community College District Computer Information Systems Career Programs" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0M1-VQ-4XS">
+                                <rect key="frame" x="49" y="413.5" width="316" height="115"/>
+                                <color key="backgroundColor" red="0.20756101499999999" green="0.73338577709999997" blue="0.91650142769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="316" id="UEY-1l-nM7"/>
+                                    <constraint firstAttribute="height" constant="115" id="zI4-xM-Txm"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HuO-xd-mbR">
+                                <rect key="frame" x="69.5" y="564.5" width="125" height="50"/>
+                                <color key="backgroundColor" red="0.84698452580000005" green="0.87704021880000005" blue="0.89419416240000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Qwq-ec-col"/>
+                                    <constraint firstAttribute="width" constant="125" id="nrA-h3-csh"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="TAP HERE TO VIEW PROGRAMS">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="12" name=".SFNSText"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="viewprogramsTapped:" destination="kpr-Kd-u1G" eventType="touchUpInside" id="zg7-L9-VZr"/>
+                                    <segue destination="FJU-6s-In9" kind="show" id="dIp-Nf-sP2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="d4c-9U-fof">
+                                <rect key="frame" x="224" y="564.5" width="125" height="50"/>
+                                <color key="backgroundColor" red="0.83977806570000002" green="0.86667972800000004" blue="0.88357704879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ouA-Y0-zBG"/>
+                                    <constraint firstAttribute="width" constant="125" id="rOS-dT-fUo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="CONTACT US">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="contactusTapped:" destination="kpr-Kd-u1G" eventType="touchUpInside" id="bpK-6c-vZq"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wcccd" translatesAutoresizingMaskIntoConstraints="NO" id="LP6-fN-DR8">
+                                <rect key="frame" x="138" y="210.5" width="138" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="NnI-ig-zXB"/>
+                                    <constraint firstAttribute="width" constant="138" id="jrx-ku-7Np"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20756101499999999" green="0.73338577709999997" blue="0.91650142769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HuO-xd-mbR" firstAttribute="centerY" secondItem="6d4-vF-6uj" secondAttribute="centerY" constant="141.5" id="1cT-Yb-iEz"/>
+                            <constraint firstItem="LP6-fN-DR8" firstAttribute="centerY" secondItem="6d4-vF-6uj" secondAttribute="centerY" constant="-150.5" id="G1w-cE-hYz"/>
+                            <constraint firstItem="LP6-fN-DR8" firstAttribute="centerX" secondItem="6d4-vF-6uj" secondAttribute="centerX" id="GgT-94-XkD"/>
+                            <constraint firstItem="0M1-VQ-4XS" firstAttribute="centerX" secondItem="6d4-vF-6uj" secondAttribute="centerX" id="SWf-XW-AhK"/>
+                            <constraint firstItem="d4c-9U-fof" firstAttribute="centerY" secondItem="6d4-vF-6uj" secondAttribute="centerY" constant="141.5" id="VQJ-rK-E7x"/>
+                            <constraint firstItem="HuO-xd-mbR" firstAttribute="centerX" secondItem="6d4-vF-6uj" secondAttribute="centerX" constant="-75" id="YPN-sQ-Yxt"/>
+                            <constraint firstItem="d4c-9U-fof" firstAttribute="centerX" secondItem="6d4-vF-6uj" secondAttribute="centerX" constant="79.5" id="Yvm-vC-oxr"/>
+                            <constraint firstItem="0M1-VQ-4XS" firstAttribute="centerY" secondItem="6d4-vF-6uj" secondAttribute="centerY" constant="23" id="i3b-C8-Lr5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6HM-fG-PFV"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="WCCCD ITI Home" id="TdB-4X-6DV">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="S5I-Kt-5qa"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contactus" destination="d4c-9U-fof" id="y70-Sx-HUc"/>
+                        <outlet property="viewprograms" destination="HuO-xd-mbR" id="ext-lN-CTq"/>
+                        <outlet property="wcccdlogo" destination="LP6-fN-DR8" id="QEr-bL-nq0"/>
+                        <outlet property="welcome" destination="0M1-VQ-4XS" id="f7b-Dx-D34"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6iY-QR-FcC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="33"/>
+        </scene>
+        <!--WCCCD ITI Programs-->
+        <scene sceneID="J2g-lG-kdF">
+            <objects>
+                <tableViewController id="FJU-6s-In9" customClass="TableViewController" customModule="WCCCD_ITI_App" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cAW-eO-lfA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cisCell" id="JbK-Kd-zYh">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JbK-Kd-zYh" id="hsc-Qg-bDj">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="FJU-6s-In9" id="51w-oa-Grx"/>
+                            <outlet property="delegate" destination="FJU-6s-In9" id="in7-ut-joi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="WCCCD ITI Programs" id="McI-wD-sGx">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="7fu-cs-tc0"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="36z-Yz-8N1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880" y="33"/>
+        </scene>
+        <!--Application Developer-->
+        <scene sceneID="RNF-qs-aQs">
+            <objects>
+                <viewController storyboardIdentifier="A" title="Application Developer" id="gXr-Ua-A9n" customClass="ViewController" customModule="WCCCD_ITI_App" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vrS-a3-fGd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wcccd" translatesAutoresizingMaskIntoConstraints="NO" id="N0v-ce-Tjj">
+                                <rect key="frame" x="138" y="199.5" width="138" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="dYS-hA-fmG"/>
+                                    <constraint firstAttribute="height" constant="174" id="h28-MF-MRi"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrV-mi-Z9W">
+                                <rect key="frame" x="83" y="401.5" width="248" height="93"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="N71-gZ-3cm"/>
+                                    <constraint firstAttribute="width" constant="248" id="Qjg-f3-bG2"/>
+                                </constraints>
+                                <string key="text">The Computer Information Systems: Application Developer Certificate is designed to prepare students for mobile application development.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="syv-yI-23O">
+                                <rect key="frame" x="146.5" y="513.5" width="121" height="48"/>
+                                <color key="backgroundColor" red="0.86114601089999998" green="0.89170423160000001" blue="0.90914498730000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="RrP-am-auy"/>
+                                    <constraint firstAttribute="width" constant="121" id="r97-qR-2If"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="TAP HERE FOR DETAILS">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="12" name=".SFNSText"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingMiddle" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="adCertPdf:" destination="guh-WG-qQx" eventType="touchUpInside" id="sRA-uD-O2B"/>
+                                    <action selector="adCertPdf:" destination="gXr-Ua-A9n" eventType="touchUpInside" id="vWY-2k-ugC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rrV-mi-Z9W" firstAttribute="centerY" secondItem="vrS-a3-fGd" secondAttribute="centerY" id="5e9-53-MSn"/>
+                            <constraint firstItem="N0v-ce-Tjj" firstAttribute="centerY" secondItem="vrS-a3-fGd" secondAttribute="centerY" constant="-161.5" id="8bj-gv-T9T"/>
+                            <constraint firstItem="rrV-mi-Z9W" firstAttribute="centerX" secondItem="vrS-a3-fGd" secondAttribute="centerX" id="P0R-hL-xRO"/>
+                            <constraint firstItem="syv-yI-23O" firstAttribute="centerX" secondItem="vrS-a3-fGd" secondAttribute="centerX" id="Qiw-TX-c56"/>
+                            <constraint firstItem="N0v-ce-Tjj" firstAttribute="centerX" secondItem="vrS-a3-fGd" secondAttribute="centerX" id="bUp-mE-AFD"/>
+                            <constraint firstItem="syv-yI-23O" firstAttribute="centerY" secondItem="vrS-a3-fGd" secondAttribute="centerY" constant="89.5" id="its-Lj-NO8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uBE-M1-ana"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Uz-rH-dNd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="guh-WG-qQx" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="-755"/>
+        </scene>
+        <!--CyberSecurity-->
+        <scene sceneID="aZe-fg-tNY">
+            <objects>
+                <viewController storyboardIdentifier="B" title="CyberSecurity" id="gqR-JF-6H8" customClass="ViewController" customModule="WCCCD_ITI_App" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FnD-iO-X7w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wcccd" translatesAutoresizingMaskIntoConstraints="NO" id="boN-1v-x0C">
+                                <rect key="frame" x="138" y="199.5" width="138" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="Lsf-po-5lO"/>
+                                    <constraint firstAttribute="height" constant="174" id="qr5-Gm-3ig"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJV-2v-0TL">
+                                <rect key="frame" x="75" y="398" width="264" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="264" id="91Z-Zp-5Sr"/>
+                                    <constraint firstAttribute="height" constant="100" id="qqX-7z-a5G"/>
+                                </constraints>
+                                <string key="text">The Computer Information Systems: CyberSecurity Certificate is designed to provide students with a solid foundation in the fundamentals of secure information technology.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Pt-Bo-bwZ">
+                                <rect key="frame" x="146.5" y="527.5" width="121" height="48"/>
+                                <color key="backgroundColor" red="0.86114601089999998" green="0.89170423160000001" blue="0.90914498730000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="IL6-8G-HJv"/>
+                                    <constraint firstAttribute="height" constant="48" id="wBH-Qc-GWm"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="TAP HERE FOR DETAILS">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="12" name=".SFNSText"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingMiddle" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="csCertPdf:" destination="gqR-JF-6H8" eventType="touchUpInside" id="Re8-5l-ucY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Pt-Bo-bwZ" firstAttribute="centerX" secondItem="FnD-iO-X7w" secondAttribute="centerX" id="77i-hX-ZZt"/>
+                            <constraint firstItem="6Pt-Bo-bwZ" firstAttribute="centerY" secondItem="FnD-iO-X7w" secondAttribute="centerY" constant="103.5" id="9Bl-Le-AAn"/>
+                            <constraint firstItem="boN-1v-x0C" firstAttribute="centerX" secondItem="FnD-iO-X7w" secondAttribute="centerX" id="EfS-Ik-J0n"/>
+                            <constraint firstItem="lJV-2v-0TL" firstAttribute="centerX" secondItem="FnD-iO-X7w" secondAttribute="centerX" id="K47-pt-AWl"/>
+                            <constraint firstItem="lJV-2v-0TL" firstAttribute="centerY" secondItem="FnD-iO-X7w" secondAttribute="centerY" id="gbY-lN-Hw1"/>
+                            <constraint firstItem="boN-1v-x0C" firstAttribute="centerY" secondItem="FnD-iO-X7w" secondAttribute="centerY" constant="-161.5" id="vbL-Sl-pUP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fwM-Ba-gYJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iSm-Kx-ddd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2688" y="-755"/>
+        </scene>
+        <!--Computer Support Specialist-->
+        <scene sceneID="sMh-Mm-X6O">
+            <objects>
+                <viewController storyboardIdentifier="C" title="Computer Support Specialist" id="xeX-sX-ugH" customClass="ViewController" customModule="WCCCD_ITI_App" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="czD-dI-hA6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wcccd" translatesAutoresizingMaskIntoConstraints="NO" id="dWh-Xa-9vz">
+                                <rect key="frame" x="138" y="199.5" width="138" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="L8u-cX-m1z"/>
+                                    <constraint firstAttribute="height" constant="174" id="QUE-Sc-0TH"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL2-aJ-aBI">
+                                <rect key="frame" x="65.5" y="397" width="283" height="102"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="283" id="WT3-7U-VHz"/>
+                                    <constraint firstAttribute="height" constant="102" id="XVP-nf-Xk4"/>
+                                </constraints>
+                                <string key="text">The Computer Information Systems: Computer Support Specialist Certificate is designed to provide students fundamental skills generally required to analyze, design and manage technology resources.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oxN-qX-OuL">
+                                <rect key="frame" x="146.5" y="528.5" width="121" height="48"/>
+                                <color key="backgroundColor" red="0.86114601089999998" green="0.89170423160000001" blue="0.90914498730000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="WdG-w2-W8q"/>
+                                    <constraint firstAttribute="width" constant="121" id="et0-xu-gII"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="TAP HERE FOR DETAILS">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="12" name=".SFNSText"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingMiddle" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="cssCertPdf:" destination="xeX-sX-ugH" eventType="touchUpInside" id="lGl-LL-fmx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oxN-qX-OuL" firstAttribute="centerY" secondItem="czD-dI-hA6" secondAttribute="centerY" constant="104.5" id="4Gr-SK-9tZ"/>
+                            <constraint firstItem="bL2-aJ-aBI" firstAttribute="centerX" secondItem="czD-dI-hA6" secondAttribute="centerX" id="6rN-kc-Ozo"/>
+                            <constraint firstItem="dWh-Xa-9vz" firstAttribute="centerY" secondItem="czD-dI-hA6" secondAttribute="centerY" constant="-161.5" id="DpY-2m-LO3"/>
+                            <constraint firstItem="bL2-aJ-aBI" firstAttribute="centerY" secondItem="czD-dI-hA6" secondAttribute="centerY" id="Hg9-ys-jrA"/>
+                            <constraint firstItem="dWh-Xa-9vz" firstAttribute="centerX" secondItem="czD-dI-hA6" secondAttribute="centerX" id="P3z-Oz-VKZ"/>
+                            <constraint firstItem="oxN-qX-OuL" firstAttribute="centerX" secondItem="czD-dI-hA6" secondAttribute="centerX" id="a44-zA-3mb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JG8-im-kbX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J0d-XY-8ME" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3602" y="-755"/>
+        </scene>
+        <!--Database Administrator-->
+        <scene sceneID="e88-r0-0TU">
+            <objects>
+                <viewController storyboardIdentifier="D" title="Database Administrator" id="UQx-Ri-vLT" customClass="ViewController" customModule="WCCCD_ITI_App" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="224-yt-9LG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wcccd" translatesAutoresizingMaskIntoConstraints="NO" id="q67-cl-0qP">
+                                <rect key="frame" x="138" y="199.5" width="138" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="uNr-AC-PI2"/>
+                                    <constraint firstAttribute="width" constant="138" id="zmc-Ft-md8"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mh8-iY-0OM">
+                                <rect key="frame" x="73" y="398.5" width="268" height="116.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="Yle-Fi-8Xl"/>
+                                    <constraint firstAttribute="height" constant="116.5" id="eFZ-gF-2qy"/>
+                                </constraints>
+                                <string key="text">The Computer Information Systems: Database Administrator Certificate is designed to give students a technical foundation to design and implement the infrastructure for business solutions using database tools.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="buo-um-3eu">
+                                <rect key="frame" x="146.5" y="543.5" width="121" height="48"/>
+                                <color key="backgroundColor" red="0.86114601089999998" green="0.89170423160000001" blue="0.90914498730000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="IOA-Oa-QoW"/>
+                                    <constraint firstAttribute="width" constant="121" id="faZ-sq-h5R"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="TAP HERE FOR DETAILS">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="12" name=".SFNSText"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingMiddle" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="daCertPdf:" destination="UQx-Ri-vLT" eventType="touchUpInside" id="lxE-gI-44J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="buo-um-3eu" firstAttribute="centerY" secondItem="224-yt-9LG" secondAttribute="centerY" constant="119.5" id="5Db-UU-PuY"/>
+                            <constraint firstItem="buo-um-3eu" firstAttribute="centerX" secondItem="224-yt-9LG" secondAttribute="centerX" id="VYp-Ua-f1b"/>
+                            <constraint firstItem="q67-cl-0qP" firstAttribute="centerY" secondItem="224-yt-9LG" secondAttribute="centerY" constant="-161.5" id="dwl-q3-T8C"/>
+                            <constraint firstItem="Mh8-iY-0OM" firstAttribute="centerX" secondItem="224-yt-9LG" secondAttribute="centerX" id="g78-UK-PdL"/>
+                            <constraint firstItem="q67-cl-0qP" firstAttribute="centerX" secondItem="224-yt-9LG" secondAttribute="centerX" id="gux-gp-NrT"/>
+                            <constraint firstItem="Mh8-iY-0OM" firstAttribute="centerY" secondItem="224-yt-9LG" secondAttribute="centerY" constant="8.75" id="o4d-SG-R0b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="en6-yB-DBM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rdg-Bm-GJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="33"/>
+        </scene>
+        <!--Network Administrator-->
+        <scene sceneID="pzB-Ip-tjB">
+            <objects>
+                <viewController storyboardIdentifier="E" title="Network Administrator" id="0z4-cp-nS5" customClass="ViewController" customModule="WCCCD_ITI_App" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nwI-ce-5bh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wcccd" translatesAutoresizingMaskIntoConstraints="NO" id="tFw-MJ-dg7">
+                                <rect key="frame" x="138" y="199.5" width="138" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="Vb4-F2-EWM"/>
+                                    <constraint firstAttribute="width" constant="138" id="Zjl-a6-yZ2"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q6-Gn-WwK">
+                                <rect key="frame" x="74" y="398" width="266.5" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="NV1-aH-9oQ"/>
+                                    <constraint firstAttribute="width" constant="266.5" id="q5s-ch-HqB"/>
+                                </constraints>
+                                <string key="text">The Computer Information Systems: Network Administrator Certificate is designed for students to design, install and support an organization's LAN (local-area network) and internet.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YwQ-K3-Z01">
+                                <rect key="frame" x="146.5" y="526.5" width="121" height="48"/>
+                                <color key="backgroundColor" red="0.86114601089999998" green="0.89170423160000001" blue="0.90914498730000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="EHY-I3-N4A"/>
+                                    <constraint firstAttribute="width" constant="121" id="h7g-CY-Oxn"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="TAP HERE FOR DETAILS">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="12" name=".SFNSText"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingMiddle" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="naCertPdf:" destination="0z4-cp-nS5" eventType="touchUpInside" id="UuT-Vl-DQk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3q6-Gn-WwK" firstAttribute="centerX" secondItem="nwI-ce-5bh" secondAttribute="centerX" id="9hw-Im-i3c"/>
+                            <constraint firstItem="3q6-Gn-WwK" firstAttribute="centerY" secondItem="nwI-ce-5bh" secondAttribute="centerY" id="9p6-rP-BoL"/>
+                            <constraint firstItem="tFw-MJ-dg7" firstAttribute="centerY" secondItem="nwI-ce-5bh" secondAttribute="centerY" constant="-161.5" id="FUV-sq-Ca3"/>
+                            <constraint firstItem="YwQ-K3-Z01" firstAttribute="centerX" secondItem="nwI-ce-5bh" secondAttribute="centerX" id="HSt-cb-w0O"/>
+                            <constraint firstItem="tFw-MJ-dg7" firstAttribute="centerX" secondItem="nwI-ce-5bh" secondAttribute="centerX" id="cou-PO-0sp"/>
+                            <constraint firstItem="YwQ-K3-Z01" firstAttribute="centerY" secondItem="nwI-ce-5bh" secondAttribute="centerY" constant="102.5" id="lYr-iv-igF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b4j-ln-5Uu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zvN-fR-sLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2687" y="33"/>
+        </scene>
+        <!--Website Developer-->
+        <scene sceneID="hgK-M4-3uR">
+            <objects>
+                <viewController storyboardIdentifier="F" title="Website Developer" id="Too-c2-khi" customClass="ViewController" customModule="WCCCD_ITI_App" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tAI-AQ-ZjI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wcccd" translatesAutoresizingMaskIntoConstraints="NO" id="qQH-cU-WWR">
+                                <rect key="frame" x="138" y="199.5" width="138" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="53r-Qj-6eq"/>
+                                    <constraint firstAttribute="height" constant="174" id="9Hv-CP-EfO"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYy-zC-Yx1">
+                                <rect key="frame" x="66.5" y="398" width="281" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="bHP-fQ-Ppu"/>
+                                    <constraint firstAttribute="width" constant="281" id="wpA-mr-yEt"/>
+                                </constraints>
+                                <string key="text">The Computer Information Systems: Website Developer Certificate is designed to prepare students for employment in the area of web design such as XHTML coders and GUI editors.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b3f-C1-NJd">
+                                <rect key="frame" x="146.5" y="525.5" width="121" height="48"/>
+                                <color key="backgroundColor" red="0.86114601089999998" green="0.89170423160000001" blue="0.90914498730000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="WbM-aS-SGa"/>
+                                    <constraint firstAttribute="width" constant="121" id="god-z9-0O7"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="TAP HERE FOR DETAILS">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="12" name=".SFNSText"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingMiddle" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="wdCertPdf:" destination="Too-c2-khi" eventType="touchUpInside" id="sxh-G2-ZyJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mYy-zC-Yx1" firstAttribute="centerY" secondItem="tAI-AQ-ZjI" secondAttribute="centerY" id="2NX-hz-55v"/>
+                            <constraint firstItem="b3f-C1-NJd" firstAttribute="centerY" secondItem="tAI-AQ-ZjI" secondAttribute="centerY" constant="101.5" id="QZs-qB-JWS"/>
+                            <constraint firstItem="mYy-zC-Yx1" firstAttribute="centerX" secondItem="tAI-AQ-ZjI" secondAttribute="centerX" id="SFy-pk-rFX"/>
+                            <constraint firstItem="qQH-cU-WWR" firstAttribute="centerX" secondItem="tAI-AQ-ZjI" secondAttribute="centerX" id="d5I-Qt-6Sk"/>
+                            <constraint firstItem="qQH-cU-WWR" firstAttribute="centerY" secondItem="tAI-AQ-ZjI" secondAttribute="centerY" constant="-161.5" id="rgw-mI-r68"/>
+                            <constraint firstItem="b3f-C1-NJd" firstAttribute="centerX" secondItem="tAI-AQ-ZjI" secondAttribute="centerX" id="yWU-bd-a2A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uUb-92-f91"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dcr-AB-WSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3600" y="33"/>
+        </scene>
+        <!--Video Game Design & Animation-->
+        <scene sceneID="cW7-c1-6Ou">
+            <objects>
+                <viewController storyboardIdentifier="G" title="Video Game Design &amp; Animation" id="1HZ-5J-Qgc" customClass="ViewController" customModule="WCCCD_ITI_App" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BRh-9r-kiH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wcccd" translatesAutoresizingMaskIntoConstraints="NO" id="Lek-LY-ONQ">
+                                <rect key="frame" x="138" y="199.5" width="138" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="3gy-Y7-hsR"/>
+                                    <constraint firstAttribute="height" constant="174" id="Kbh-41-HwO"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuL-ZU-57q">
+                                <rect key="frame" x="65.5" y="399.5" width="283" height="133"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="283" id="8Gq-aa-WxC"/>
+                                    <constraint firstAttribute="height" constant="133" id="DBu-Iv-Oqs"/>
+                                </constraints>
+                                <string key="text">The Computer Information Systems: Video Game Design and Animation Certificate is designed to provide students fundamental skills that are generally required for the video game design, animation and programming field.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U2N-IC-RxQ">
+                                <rect key="frame" x="146.5" y="540.5" width="121" height="48"/>
+                                <color key="backgroundColor" red="0.86114601089999998" green="0.89170423160000001" blue="0.90914498730000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="Fsv-dl-Hez"/>
+                                    <constraint firstAttribute="height" constant="48" id="KQg-Ik-dKU"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="TAP HERE FOR DETAILS">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="12" name=".SFNSText"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingMiddle" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="vgdaCertPdf:" destination="1HZ-5J-Qgc" eventType="touchUpInside" id="guA-3v-vak"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lek-LY-ONQ" firstAttribute="centerY" secondItem="BRh-9r-kiH" secondAttribute="centerY" constant="-161.5" id="M4Z-Mc-XHH"/>
+                            <constraint firstItem="CuL-ZU-57q" firstAttribute="centerX" secondItem="BRh-9r-kiH" secondAttribute="centerX" id="SBL-SV-dh2"/>
+                            <constraint firstItem="U2N-IC-RxQ" firstAttribute="centerX" secondItem="BRh-9r-kiH" secondAttribute="centerX" id="Vcq-9g-koG"/>
+                            <constraint firstItem="Lek-LY-ONQ" firstAttribute="centerX" secondItem="BRh-9r-kiH" secondAttribute="centerX" id="aP0-uN-B6W"/>
+                            <constraint firstItem="U2N-IC-RxQ" firstAttribute="centerY" secondItem="BRh-9r-kiH" secondAttribute="centerY" constant="116.5" id="vb9-Rh-xh5"/>
+                            <constraint firstItem="CuL-ZU-57q" firstAttribute="centerY" secondItem="BRh-9r-kiH" secondAttribute="centerY" constant="18" id="zDR-uY-mzq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ANs-Fg-adh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qhV-3S-B6C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="805"/>
+        </scene>
+        <!--Computer Information Systems-->
+        <scene sceneID="gK7-4V-kKV">
+            <objects>
+                <viewController storyboardIdentifier="H" title="Computer Information Systems" id="WCY-oY-VvO" customClass="ViewController" customModule="WCCCD_ITI_App" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EtW-3a-ZS2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wcccd" translatesAutoresizingMaskIntoConstraints="NO" id="Zj7-6C-rVi">
+                                <rect key="frame" x="138" y="199.5" width="138" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="cKR-oG-OHT"/>
+                                    <constraint firstAttribute="width" constant="138" id="dk9-Ju-mHf"/>
+                                </constraints>
+                            </imageView>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L8s-bz-f1T">
+                                <rect key="frame" x="146.5" y="540.5" width="121" height="48"/>
+                                <color key="backgroundColor" red="0.86114601089999998" green="0.89170423160000001" blue="0.90914498730000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="UiK-0n-Ywz"/>
+                                    <constraint firstAttribute="height" constant="48" id="clq-uu-WKn"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="TAP HERE FOR DETAILS">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="12" name=".SFNSText"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingMiddle" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="cisAssocPdf:" destination="WCY-oY-VvO" eventType="touchUpInside" id="FDq-T3-6yV"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sn-of-hIl">
+                                <rect key="frame" x="59" y="399.5" width="296" height="116.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="296" id="DI7-da-hv5"/>
+                                    <constraint firstAttribute="height" constant="116.5" id="UYl-rI-eMg"/>
+                                </constraints>
+                                <string key="text">The Computer Information Systems: Computer Information Systems Associates of Applied Science is designed to provide students information systems fundamentals and allows for the selection of courses in specialized areas of concentration.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zj7-6C-rVi" firstAttribute="centerX" secondItem="EtW-3a-ZS2" secondAttribute="centerX" id="0I6-1J-9o1"/>
+                            <constraint firstItem="L8s-bz-f1T" firstAttribute="centerX" secondItem="EtW-3a-ZS2" secondAttribute="centerX" id="EhH-FT-BOn"/>
+                            <constraint firstItem="5sn-of-hIl" firstAttribute="centerY" secondItem="EtW-3a-ZS2" secondAttribute="centerY" constant="9.75" id="be6-RF-IVr"/>
+                            <constraint firstItem="5sn-of-hIl" firstAttribute="centerX" secondItem="EtW-3a-ZS2" secondAttribute="centerX" id="e8E-Rx-IvE"/>
+                            <constraint firstItem="L8s-bz-f1T" firstAttribute="centerY" secondItem="EtW-3a-ZS2" secondAttribute="centerY" constant="116.5" id="f0r-E7-6so"/>
+                            <constraint firstItem="Zj7-6C-rVi" firstAttribute="centerY" secondItem="EtW-3a-ZS2" secondAttribute="centerY" constant="-161.5" id="jPa-Zu-WL0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="63u-8G-ltQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZM-pk-XGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2687" y="805"/>
+        </scene>
+        <!--CyberSecurity-->
+        <scene sceneID="nAb-lB-OCX">
+            <objects>
+                <viewController storyboardIdentifier="I" title="CyberSecurity" id="BSX-qN-w1s" customClass="ViewController" customModule="WCCCD_ITI_App" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BjL-TP-9tH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wcccd" translatesAutoresizingMaskIntoConstraints="NO" id="3F2-hQ-o81">
+                                <rect key="frame" x="138" y="199.5" width="138" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="8f6-bv-WJk"/>
+                                    <constraint firstAttribute="width" constant="138" id="E2E-us-W5V"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb4-dO-yf0">
+                                <rect key="frame" x="64.5" y="398.5" width="285" height="117"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="285" id="C5R-Jt-5os"/>
+                                    <constraint firstAttribute="height" constant="117" id="tJW-c0-VcJ"/>
+                                </constraints>
+                                <string key="text">The Computer Information Systems: CyberSecurity Associates in Applied Science is designed to provide students the fundamentals of secure information technology design, construction and maintenance.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7PH-aM-THL">
+                                <rect key="frame" x="146.5" y="536.5" width="121" height="48"/>
+                                <color key="backgroundColor" red="0.86114601089999998" green="0.89170423160000001" blue="0.90914498730000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="4D3-J2-9Qw"/>
+                                    <constraint firstAttribute="height" constant="48" id="6UG-TQ-MX9"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="TAP HERE FOR DETAILS">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="12" name=".SFNSText"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingMiddle" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="csAssocPdf:" destination="BSX-qN-w1s" eventType="touchUpInside" id="4yd-oS-TOG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7PH-aM-THL" firstAttribute="centerY" secondItem="BjL-TP-9tH" secondAttribute="centerY" constant="112.5" id="aiD-CB-CJG"/>
+                            <constraint firstItem="3F2-hQ-o81" firstAttribute="centerY" secondItem="BjL-TP-9tH" secondAttribute="centerY" constant="-161.5" id="exZ-SF-Sdm"/>
+                            <constraint firstItem="3F2-hQ-o81" firstAttribute="centerX" secondItem="BjL-TP-9tH" secondAttribute="centerX" id="fs6-4B-kCa"/>
+                            <constraint firstItem="cb4-dO-yf0" firstAttribute="centerY" secondItem="BjL-TP-9tH" secondAttribute="centerY" constant="9" id="j1T-7o-XCd"/>
+                            <constraint firstItem="cb4-dO-yf0" firstAttribute="centerX" secondItem="BjL-TP-9tH" secondAttribute="centerX" id="muG-f8-tLg"/>
+                            <constraint firstItem="7PH-aM-THL" firstAttribute="centerX" secondItem="BjL-TP-9tH" secondAttribute="centerX" id="wbw-d8-RFI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SVn-Y6-eu9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lUx-34-F04" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3601" y="805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LLg-TV-UbW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CmM-YP-wK7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EFS-mP-FCn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kpr-Kd-u1G" kind="relationship" relationship="rootViewController" id="7yn-ST-gs4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Vu-DG-aYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-928" y="33"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wcccd" width="150" height="150"/>
+    </resources>
+</document>
